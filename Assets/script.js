@@ -7,7 +7,7 @@ $("#searchBtn").on("click", function (event) {
     city = $("#city").val();
     $("#city").val("");
 
-    var queryUrl = "http://api.openweathermap.org/data/2.5/forecast?q=" + city + apiKey;
+    var queryUrl = "https://api.openweathermap.org/data/2.5/forecast?q=" + city + apiKey;
 
     $.ajax({
         url: queryUrl,
